@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Typing Race</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Typing Race</h1>
+  <div class="sentence" id="targetSentence">Klik mulai untuk memulai permainan</div>
+  <button onclick="startGame()">Mulai</button>
+
+  <div class="players">
+    <div class="player">
+      <h3>Player 1</h3>
+      <textarea id="player1Input" placeholder="Giliranmu!" disabled></textarea>
+      <div class="timer" id="timer1">Waktu: 0.00 s</div>
+    </div>
+    <div class="player">
+      <h3>Player 2</h3>
+      <textarea id="player2Input" placeholder="Tunggu dulu..." disabled></textarea>
+      <div class="timer" id="timer2">Waktu: 0.00 s</div>
+    </div>
+  </div>
+
+  <div class="status" id="statusText">Menunggu giliran...</div>
+  <div class="winner" id="winnerText"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
